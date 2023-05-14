@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int n,last,first ,digit, c;
+  printf("Enter a number");
+  scanf("%d",&n);
+  last=n%10;
+  digit=(int)log10(n);
+  first=(int)(n/pow (10,digit));
+  printf("Before swapping first and last digit is %d %d\n",first,last);
+  c=first;
+  first=last;
+  last=c;
+  
+  printf("After swapping first and last digit is %d %d",first,last);
+
+    return 0;
+}
