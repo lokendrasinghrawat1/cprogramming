@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+ int n,digits,last,sum=0,previous,i;
+ printf("enter your number");
+ scanf("%d",&n);
+     i=n;
+     digits=log10(n)+1;
+     
+     while(n>0)
+     {
+         last=n%10;
+         sum=sum+pow(last,digits);
+         n=n/10;
+     }
+     if(i==sum)
+        printf("armstrong");
+     else
+        printf("not armstrong");
+    return 0;
+}
