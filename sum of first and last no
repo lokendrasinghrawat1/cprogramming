@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int n,last,first ,digit,sum=0;
+  printf("Enter a number");
+  scanf("%d",&n);
+  last=n%10;
+  digit=(int)log10(n);
+  first=(int)(n/pow (10,digit));
+  sum=first+last;
+  printf("the first and last %d",sum);
+
+    return 0;
+}
