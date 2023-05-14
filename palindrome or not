@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+int n,last,sum=0, z;
+printf("enter your number");
+scanf("%d",&n);
+z=n;
+while(n>0)
+{
+    sum=sum*10+n%10;
+    n=n/10;
+}
+if(sum==z)
+{
+    printf("Palindrom");
+}
+else
+{
+    printf("Not a palindrom");
+}
+
+    return 0;
+}
