@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+   int base,expo,power=1;
+   int i;
+   printf("enter both base and power");
+   scanf("%d",&base);
+   scanf("%d",&expo);
+   for(i=1;i<=expo;i++)
+   {
+       power=power*base;
+   }
+   printf("%d^%d=%d",base,expo,power);
+
+    return 0;
+}
