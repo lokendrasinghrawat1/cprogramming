@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int n,last=0;
+  printf("Enter a number");
+  scanf("%d",&n);
+  while(n>0)
+  {
+      last=last*10+n%10;
+      n=n/10;
+  }
+  printf(" Reverse of number is %d",last);
+ 
+    return 0;
+}
