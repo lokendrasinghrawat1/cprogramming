@@ -1,0 +1,33 @@
+Delete an elment from an array
+#include <stdio.h>
+int  array(int pos,int a[],int n){
+    int i;
+        for(i=pos;i<n-1;i++){
+            a[i]=a[i+1];
+        }
+        return(--n);
+}
+
+int main()
+{
+    int n;
+    printf("enter size of an array");
+    scanf("%d",&n);
+     int a[n],m,pos ,i;
+     printf("Enter number of elements in array");
+     scanf("%d",&m);
+   
+    for(i=0;i<m;i++){
+        scanf("%d",&a[i]);
+    }
+        printf("Enter position");
+        scanf("%d",&pos);
+      
+         m=array(pos,a,m);  
+          for(i=0;i<m;i++){
+        printf("%d",a[i]);
+    }
+ 
+
+    return 0;
+}
